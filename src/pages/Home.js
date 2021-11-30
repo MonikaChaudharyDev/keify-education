@@ -19,27 +19,26 @@ function Home() {
 
   return (
     <div className="home">
-    <div class="hero_banner image-cover image_bottom">
-      <div class="container">
-        <div class="row homepageSection">
-          <div class="col-xl-9 col-lg-9 col-sm-9 col-xs-12 col-md-9 sliderBlk">
-            <div class="home-slider space">
+    <div className="hero_banner image-cover image_bottom">
+      <div className="container">
+        <div className="row homepageSection">
+          <div className="col-xl-9 col-lg-9 col-sm-9 col-xs-12 col-md-9 sliderBlk">
+            <div className="home-slider space">
               {/* <!-- Single Item --> */}
-              <div class="single_items lios_item">
-                <div class="row align-items-center">
-                  <div class="col-lg-12 col-md-12 col-sm-12">
-                    <div class="side_block">
+              <div className="single_items lios_item">
+                <div className="row align-items-center">
+                  <div className="col-lg-12 col-md-12 col-sm-12">
+                    <div className="side_block">
                       
-                      <Carousel   activeIndex={index} onSelect={handleSelect} controls={false} autoPlay=
-{true}>
+                      <Carousel   activeIndex={index} onSelect={handleSelect} controls={false} autoPlay={true}>
                        <Carousel.Item interval={2000}>
-                       <img src={slider1} class="img-fluid" alt="" />
+                       <img src={slider1} className="img-fluid" alt="" />
                       </Carousel.Item>
                       <Carousel.Item interval={2000}>
-                       <img src={slider2} class="img-fluid" alt="" />
+                       <img src={slider2} className="img-fluid" alt="" />
                       </Carousel.Item>
                       <Carousel.Item interval={2000}>
-                       <img src={slider1} class="img-fluid" alt="" />
+                       <img src={slider1} className="img-fluid" alt="" />
                       </Carousel.Item>
                     </Carousel> 
                     {/* <img src={slider1} class="img-fluid" alt="" /> */}
@@ -69,32 +68,32 @@ function Home() {
               </div> */}
             </div>
           </div>
-          <div class="col-xl-3 col-lg-3 col-sm-3 col-xs-12 col-md-3 notificatBlk">
-            <div class="notificationBlock">
-              <h4 class="sectTtl txt-darkGrey text-center">Notification</h4>
-              <ul class="notificationList">
+          <div className="col-xl-3 col-lg-3 col-sm-3 col-xs-12 col-md-3 notificatBlk">
+            <div className="notificationBlock">
+              <h4 className="sectTtl txt-darkGrey text-center">Notification</h4>
+              <ul className="notificationList">
                 <li>
-                  <a href="#" class="notifyItem">
+                  <a href="#" className="notifyItem">
                     Must Read - Public Notice <img src={NewSticker} alt="New" />
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="notifyItem">
+                  <a href="#" className="notifyItem">
                     Launching SSC - JE Live Online Course <img src={NewSticker} alt="New" />
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="notifyItem">
+                  <a href="#" className="notifyItem">
                     GATE 2022 Live Online Course <img src={NewSticker} alt="New" />
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="notifyItem">
+                  <a href="#" className="notifyItem">
                     Launching Chemical Engineering Course for GATE 2022 <img src={NewSticker} alt="New" />
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="notifyItem">
+                  <a href="#" className="notifyItem">
                     ESE 2020 Result
                   </a>
                 </li>
@@ -108,26 +107,26 @@ function Home() {
     
     
     {/* <!-- ============================ Exam Section Start ================================== --> */}
-    <section class="section-exam gray">
-      <div class="container">
-        <div class="d-flex heading justify-content-between align-items-center">
-                <h2 class="">Exams</h2>
-                <a href="#">Explore more <i class="fa fa-angle-right exploreMore" aria-hidden="true"></i></a>
+    <section className="section-exam gray">
+      <div className="container">
+        <div className="d-flex heading justify-content-between align-items-center">
+                <h2 className="">Exams</h2>
+                <a href="#">Explore more <i className="fa fa-angle-right exploreMore" aria-hidden="true"></i></a>
             </div>
-        <div class="row justify-content-center mt-30">
-          <div class="col-lg-12 col-md-12 col-sm-12">
-            <div class="crp_box fl_color ovr_tops">
-              <div class="row align-items-center">
+        <div className="row justify-content-center mt-30">
+          <div className="col-lg-12 col-md-12 col-sm-12">
+            <div className="crp_box fl_color ovr_tops">
+              <div className="row align-items-center">
                 
                <Exam  title='CAT' description='CAT is the Common Admission Test for admissions to
                     MBA programmes in 20 Indian Institutes of Management (IIMs) and top B-schools in India.'
-                icon={<i class="fa fa-journal-whills"></i>}/>
+                icon={<i className="fa fa-journal-whills"></i>}/>
                 <Exam   title='GATE'  description='Graduate Aptitude Test in Engineering (GATE 2022) 
                       is one of an online national level entrance exam,and it is conducted
-                      by the Indian Institute of Science...' icon={<i class="fa fa-business-time"></i>}/>
+                      by the Indian Institute of Science...' icon={<i className="fa fa-business-time"></i>}/>
                 <Exam title='University EXAMS'  description='What would I do after 12 th ? 
                      How would I get into the Under Graduate Management Programs? 
-                     Which program would be better to choose?' icon={<i class="fa fa-user-shield"></i>}/> 
+                     Which program would be better to choose?' icon={<i className="fa fa-user-shield"></i>}/> 
                 
               </div>
             </div>
@@ -141,13 +140,13 @@ function Home() {
     
     
     {/* <!-- ============================ Student Testimonial Start ================================== --> */}
-    <section class="section-exam">
-      <div class="container">
-        <div class="d-flex heading justify-content-between align-items-center">
-                <h2 class="">Student Testimonials</h2>
+    <section className="section-exam">
+      <div className="container">
+        <div className="d-flex heading justify-content-between align-items-center">
+                <h2 className="">Student Testimonials</h2>
             </div>
-        <div class="testimonialsSet  mt-30">
-          <div class="reviews-slide space">
+        <div className="testimonialsSet  mt-30">
+          <div className="reviews-slide space">
             <StudentTestimonial data = {data} />
           </div>
         </div>

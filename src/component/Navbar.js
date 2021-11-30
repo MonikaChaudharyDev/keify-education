@@ -1,50 +1,53 @@
 import React from 'react';
 import Logo from '../assets/img/logo.png';
-
+import { BrowserRouter as Router, Route, Link,NavLink } from 'react-router-dom';
 function Navbar() {
   return (
-    <div class="header header-light head-shadow">
-      <div class="container">
-        <nav id="navigation" class="navigation navigation-landscape">
-          <div class="nav-header">
-            <a class="nav-brand" href="#">
-              <img src={Logo} class="logo" alt="" />
+    
+    <div className="header header-light head-shadow">
+      <div className="container">
+        <nav id="navigation" className="navigation navigation-landscape">
+          <div className="nav-header">
+            <a classNames="nav-brand" href="#">
+              <img src={Logo} className="logo" alt="" />
             </a>
-            <div class="nav-toggle"></div>
-            <div class="mobile_nav">
+            <div className="nav-toggle"></div>
+            <div className="mobile_nav">
               <ul>
                 <li>
-                  <a href="login.html" class="crs_yuo12 w-auto text-white theme-bg">
-                    <span class="embos_45"><i class="fas fa-sign-in-alt mr-1"></i>Sign In</span>
+                  <a href="login.html" className="crs_yuo12 w-auto text-white theme-bg">
+                    <span className="embos_45"><i className="fas fa-sign-in-alt mr-1"></i>Sign In</span>
                   </a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="nav-menus-wrapper">
-            <ul class="nav-menu">
-              <li><a href="#">Tuition</a></li>
+          <div className="nav-menus-wrapper">
+            <ul className="nav-menu">
+              <li><NavLink to="/tution">Tuition</NavLink></li>
               <li><a href="#">GATE</a></li>
               <li><a href="#">University Exam</a></li>
             </ul>
             
-            <ul class="nav-menu nav-menu-social align-to-right">
+            <ul className="nav-menu nav-menu-social align-to-right">
               
               <li>
-                <a href="signup.html" class="alio_green">
-                  <i class="fas fa-sign-in-alt mr-1"></i><span class="dn-lg">Register</span>
-                </a>
+               
+                <NavLink to="/signup" className="alio_green">
+                  <i className="fas fa-sign-in-alt mr-1"></i><span className="dn-lg">Register</span>
+                </NavLink>
               </li>
               <li>
-                <a href="login.html" class="alio_green">
-                  <i class="fas fa-sign-in-alt mr-1"></i><span class="dn-lg">Login</span>
-                </a>
+                <NavLink to ="/login" className="alio_green">
+                  <i className="fas fa-sign-in-alt mr-1"></i><span className="dn-lg">Login</span>
+                </NavLink>
               </li>
             </ul>
           </div>
         </nav>
       </div>
     </div>
+    
   )
 }
 

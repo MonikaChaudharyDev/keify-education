@@ -17,9 +17,9 @@ function Video({ data }) {
           data.map((video) => {
             const { id, src} = video;
             return (
-              <div class="single_items lios_item">
-                <div class="vdoSect border">
-                  <div class="_vdo_flex">
+              <div className="single_items lios_item">
+                <div className="vdoSect border">
+                  <div className="_vdo_flex">
                     <iframe width="100%" height="175" src={src}>
                     </iframe>
                   </div>

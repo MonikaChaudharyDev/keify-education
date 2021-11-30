@@ -37,10 +37,10 @@ function Footer() {
                   </div>
                 </div>
                     
-                <div class="col-lg-4 col-md-4">
-                  <div class="footer_widget">
-                    <h4 class="widget_title">About Us</h4>
-                    <ul class="footer-menu">
+                <div className="col-lg-4 col-md-4">
+                  <div className="footer_widget">
+                    <h4 className="widget_title">About Us</h4>
+                    <ul className="footer-menu">
                       <li><a href="#">About Keify</a></li>                      
                       <li><a href="#">Refund &amp; Cancellation</a></li>
                       <li><a href="#">Terms and Conditions</a></li>
@@ -50,37 +50,37 @@ function Footer() {
                   </div>
                 </div>
             
-                <div class="col-lg-4 col-md-4">
-                  <div class="footer_widget">
-                    <h4 class="widget_title">Helpline</h4>
-                    <p class="mb-3 font-16">
-                      <i class="fas fa-phone-alt"></i> +91 1234567890
+                <div className="col-lg-4 col-md-4">
+                  <div className="footer_widget">
+                    <h4 className="widget_title">Helpline</h4>
+                    <p className="mb-3 font-16">
+                      <i className="fas fa-phone-alt"></i> +91 1234567890
                     </p>
-                    <p class="mb-1">
+                    <p className="mb-1">
                       Time : 9:00 AM – 9:00 PM | Monday to Saturday
                     </p>
-                    <p class="mb-3 font-14">
-                      <i class="fa fa-envelope"></i> 
-                      <a class="mb-3 font-12" href="mailto:support@keify.com">
+                    <p className="mb-3 font-14">
+                      <i className="fa fa-envelope"></i> 
+                      <a className="mb-3 font-12" href="mailto:support@keify.com">
                         support@keify.com
                       </a>
                     </p>
               
-                    <div class="d-flex">
-                      <a href="#" target="_blank" class="facebook socila-icon-box">
-                        <i class="fab fa-facebook-f"></i>
+                    <div className="d-flex">
+                      <a href="#" target="_blank" className="facebook socila-icon-box">
+                        <i className="fab fa-facebook-f"></i>
                       </a>
-                      <a href="#" target="_blank" class="twitter socila-icon-box">
-                        <i class="fab fa-twitter"></i>
+                      <a href="#" target="_blank" className="twitter socila-icon-box">
+                        <i className="fab fa-twitter"></i>
                       </a>
-                      <a href="#" target="_blank" class="instagram socila-icon-box">
-                        <i class="fab fa-instagram"></i>
+                      <a href="#" target="_blank" className="instagram socila-icon-box">
+                        <i className="fab fa-instagram"></i>
                       </a>
-                      <a href="#" target="_blank" class="youtube socila-icon-box">
-                        <i class="fab fa-youtube"></i>
+                      <a href="#" target="_blank" className="youtube socila-icon-box">
+                        <i className="fab fa-youtube"></i>
                       </a>
-                      <a href="#" target="_blank" class="telegram socila-icon-box">
-                        <i class="fab fa-telegram"></i>
+                      <a href="#" target="_blank" className="telegram socila-icon-box">
+                        <i className="fab fa-telegram"></i>
                       </a>
                     </div>
                   </div>
@@ -91,11 +91,11 @@ function Footer() {
         </div>
       </div>
       
-      <div class="footer-bottom br_light">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-12 col-md-12 text-center">
-              <p class="mb-0">© 2021 Keify.</p>
+      <div className="footer-bottom br_light">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-12 col-md-12 text-center">
+              <p className="mb-0">© 2021 Keify.</p>
             </div>
           </div>
         </div>

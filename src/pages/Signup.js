@@ -1,49 +1,49 @@
 import React from 'react';
 import B9 from '../assets/img/b-9.png'
-
+import { BrowserRouter as Router, Route, Link,NavLink } from 'react-router-dom';
 function Signup() {
   return (    
     <div className="signup">
       <section>
-				<div class="container">
-					<div class="row justify-content-center">
+				<div className="container">
+					<div className="row justify-content-center">
 					
-						<div class="col-xl-7 col-lg-8 col-md-12 col-sm-12">
+						<div className="col-xl-7 col-lg-8 col-md-12 col-sm-12">
 							<form>
-								<div class="crs_log_wrap bx-shd-wrap">
-									<div class="crs_log__thumb">
-										<img src={B9} class="img-fluid" alt="" />
+								<div className="crs_log_wrap bx-shd-wrap">
+									<div className="crs_log__thumb">
+										<img src={B9} className="img-fluid" alt="" />
 									</div>
-									<div class="crs_log__caption">
-										<div class="rcs_log_123">
-											<div class="rcs_ico"><i class="fas fa-user"></i></div>
+									<div className="crs_log__caption">
+										<div className="rcs_log_123">
+											<div className="rcs_ico"><i className="fas fa-user"></i></div>
 										</div>
 										
-										<div class="rcs_log_124">
-											<div class="Lpo09"><h4>Register Your Account</h4></div>
-											<div class="form-group row mb-0">
-												<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
-													<div class="form-group">
+										<div className="rcs_log_124">
+											<div className="Lpo09"><h4>Register Your Account</h4></div>
+											<div className="form-group row mb-0">
+												<div className="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+													<div className="form-group">
 														<label>First Name</label>
-														<input type="text" class="form-control" placeholder="First Name" />
+														<input type="text" className="form-control" placeholder="First Name" />
 													</div>
 												</div>
-												<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
-													<div class="form-group">
+												<div className="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+													<div className="form-group">
 														<label>Last Name</label>
-														<input type="text" class="form-control" placeholder="Last Name" />
+														<input type="text" className="form-control" placeholder="Last Name" />
 													</div>
 												</div>
 											</div>
-											<div class="form-group">
+											<div className="form-group">
 												<label>Email</label>
-												<input type="text" class="form-control" placeholder="support@keify.com" />
+												<input type="text" className="form-control" placeholder="support@keify.com" />
 											</div>
-											<div class="form-group row mb-0">
-												<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
-													<div class="form-group">
+											<div className="form-group row mb-0">
+												<div className="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+													<div className="form-group">
 														<label>Select State</label>
-														<select class="form-control" id="states" placeholder="Select State">
+														<select className="form-control" id="states" placeholder="Select State">
  														  <option value="Andhra Pradesh">Andhra Pradesh</option>
 															<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
 															<option value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -83,10 +83,10 @@ function Signup() {
  														</select>
 													</div>
 												</div>
-												<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
-													<div class="form-group">
+												<div className="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+													<div className="form-group">
 														<label>Select City</label>
-														<select class="form-control" id="city" placeholder="Select a city">
+														<select className="form-control" id="city" placeholder="Select a city">
  														   <option>Nagpur</option>
  														   <option>Akola</option>
  														   <option>Amravati</option>
@@ -95,22 +95,22 @@ function Signup() {
 													</div>
 												</div>
 											</div>
-											<div class="form-group">
+											<div className="form-group">
 												<label>Phone Number</label>
-												<input type="text" class="form-control" placeholder="Phone number" />
+												<input type="text" className="form-control" placeholder="Phone number" />
 											</div>
-											<div class="form-group">
+											<div className="form-group">
 												<label>Password</label>
-												<input type="text" class="form-control" placeholder="*******" />
+												<input type="text" className="form-control" placeholder="*******" />
 											</div>
-											<div class="form-group">
-												<button type="button" class="btn full-width btn-md theme-bg text-white">Sign Up</button>
+											<div className="form-group">
+												<button type="button" className="btn full-width btn-md theme-bg text-white">Sign Up</button>
 											</div>
 										</div>
 									</div>
-									<div class="crs_log__footer d-flex justify-content-between">
-										<div class="fhg_45"><p class="musrt">Already have account? <a href="login.html" class="theme-cl">Login</a></p></div>
-										<div class="fhg_45"><p class="musrt"><a href="forgot.html" class="text-danger">Forgot Password?</a></p></div>
+									<div className="crs_log__footer d-flex justify-content-between">
+										<div className="fhg_45"><p className="musrt">Already have account? <NavLink to="/login" className="theme-cl">Login</NavLink></p></div>
+										<div className="fhg_45"><p className="musrt">< NavLink to="/forgotpassword" className="text-danger">Forgot Password?</NavLink></p></div>
 									</div>
 								</div>
 							</form>
